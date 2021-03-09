@@ -22,8 +22,9 @@ This repository contains:
 	Contains: spotify_id, song_name, year, artist, duration
 	
 	
-	- Spotify API
+	- Spotify API OR 
 	
+	- rateyourmusic.com/charts/top/album/all-time
 	Contains: genre,
 	*Research if the popularity or hits of each song can be found
 	
