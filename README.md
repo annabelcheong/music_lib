@@ -1,5 +1,16 @@
 # music_lib
-ETL Project
+MUSIC DATABASE PROJECT (ETL)
+
+********************
+AUDIENCE 
+Music Industry of Australia
+
+********************
+PURPOSE
+The purpose of this project is to obtain music metadata for the Australian Music Industry.
+
+********************
+REPOSITORY
 
 This repository contains:
 
@@ -17,11 +28,6 @@ This repository contains:
 	*Research if the popularity or hits of each song can be found
 	
 
-********************
-AUDIENCE: Music Industry of Australia
-
-
-********************
 
 Common column between the 2 sources: either by song name or spotify_id
 
