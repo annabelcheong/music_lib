@@ -22,7 +22,9 @@ This repository contains:
 	Contains: spotify_id, song_name, year, artist, duration
 	
 	
-	- Spotify API OR 
+	- Spotify API 
+	https://spotipy.readthedocs.io/en/2.17.1/#api-reference
+	https://github.com/plamere/spotipy/blob/master/README.md 
 	
 	- rateyourmusic.com/charts/top/album/all-time
 	Contains: genre,
