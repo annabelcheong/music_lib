@@ -2,6 +2,11 @@
 MUSIC DATABASE PROJECT (ETL)
 
 ********************
+TEAM MEMBERS
+ - Jim Bentley
+ - Annabel Cheong
+
+********************
 AUDIENCE 
 Music Industry of Australia
 
