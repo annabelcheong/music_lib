@@ -20,13 +20,20 @@ CREATE TABLE spotify_csv AS t1 (
 -- Create table for spot_api_df (from spotipy API)
 CREATE TABLE spotify_api AS t2 (
 id SERIAL PRIMARY KEY,
--- List other variables in this section , 
--- List other variables in this section , 
--- List other variables in this section 
+s_timesig 
 );
 
 --------------
+-- TABLE 3 --  *** Jim to add to
+--------------
+
+
+
+
+
+--------------
 -- JOIN TABLES 1 AND 2 --
+-- JOIN TABLES 3 to (TABLE 1 AND 2)--
 --------------
 -- Joins tables
 
@@ -36,3 +43,6 @@ SELECT t1.id, t1.s_name, t1.s_artist, t1.s_key, t1.s_tempo, t1.s_year, t1.s_popu
 FROM t1
 JOIN t2
 ON t1.id = t2.id;
+
+
+
