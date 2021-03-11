@@ -5,7 +5,7 @@
 -- NOTES: -- Used s_ prefix eg. s_name, s_year BECAUSE name is already a reserved variable in sql.
           -- id is the spotify id which is unique by the specific song and corresponding artist
 CREATE TABLE spotify_csv (
-  id SERIAL PRIMARY KEY,  
+  id VARCHAR PRIMARY KEY,  
   s_name VARCHAR NOT NULL,
   s_artist VARCHAR NOT NULL,
   s_key INT NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE spotify_csv (
 --------------
 -- Create table for spot_api_df (from spotipy API)
 CREATE TABLE spotify_api (
-id SERIAL PRIMARY KEY,
+id VARCHAR PRIMARY KEY,
 s_timesig INT NOT NULL
 );
 
