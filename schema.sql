@@ -20,7 +20,7 @@ CREATE TABLE spotify_csv (
 -- Create table for spot_api_df (from spotipy API)
 CREATE TABLE spotify_api (
 id SERIAL PRIMARY KEY,
-s_timesig 
+s_timesig INT NOT NULL
 );
 
 --------------
