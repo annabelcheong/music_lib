@@ -24,12 +24,21 @@ s_timesig INT NOT NULL
 );
 
 --------------
--- TABLE 3 --  *** Jim to add to
+-- TABLE 3 --  
 --------------
-
-
-
-
+-- Create table for album_df (from Rate Your Music web scrape)
+CREATE TABLE album (
+position INT NOT NULL PRIMARY KEY, 
+title VARCHAR NOT NULL, 
+artist VARCHAR NOT NULL, 
+release_date  VARCHAR, 
+genres  VARCHAR,
+secondarygenres  VARCHAR, 
+avg_rating INT, 
+rating_count INT, 
+review_count INT,
+spotify_link  VARCHAR
+);
 
 --------------
 -- JOIN TABLES 1 AND 2 --
