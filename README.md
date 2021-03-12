@@ -19,26 +19,46 @@ REPOSITORY
 
 This repository contains:
 
-- Resources
+***** FILE: music.ipynb *****
+This includes the extraction, transformation and loading (including the connection to postgress and loading of data) from the data.csv file (from Kaggle) and from the Spotify API site. 
 
-	- spotify csv file from Kaggle
+
+***** FILE: album.ipynb *****
+This includes the extraction, transformation and loading of information from the Top Albums API page. 
+
+
+***** FILE: schema.ipynb *****
+This includes the query to create all the tables with details on the column headings.
+
+***** FILE: queries.ipynb *****
+This includes the query to join the tables.
+Various views to tailor for specific audience groups.
+
+
+***** FOLDER: Resources *****
+
+*** Raw Data ***
+
+	- data.csv (spotify csv file from Kaggle)
 	https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=data.csv
-
 	Contains: spotify_id, song_name, year, artist, duration
 	
+	- Spotify API (retrieved via json)
+	https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-audio-features
 	
-	- Spotify API 
-	https://spotipy.readthedocs.io/en/2.17.1/#api-reference
-	https://github.com/plamere/spotipy/blob/master/README.md 
+	- Top Albums API (retrieved via web scraping)
+	rateyourmusic.com/charts/top/album/all-time
+	Contains: position,title,artist,release_date,genres,secondarygenres,avg_rating,rating_count,review_count,spotify_link
 	
-	- rateyourmusic.com/charts/top/album/all-time
-	Contains: genre,
-	*Research if the popularity or hits of each song can be found
-	
+*** Transformed Data ***
+
+	- new_csv.csv
+	- timesig.csv
+	- albums.csv
 
 
-Common column between the 2 sources: either by song name or spotify_id
-
+Common column to join between data.csv and Spotify API: id
+Common column to join between data.csv and Top Albums API: artist
 
 	
 
