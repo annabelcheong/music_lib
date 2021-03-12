@@ -6,10 +6,10 @@
 
 CREATE VIEW ALL_MUSIC AS --Saved as a view 'ALL_MUSIC' in Database
 
-SELECT t1.id, t1.title, t1.artist, t1.key, t1.tempo, t1.year, t1.popularity, t2.timesig
+SELECT t1.id, t1.title, t1.artist, t1.key, t1.tempo, t1.year, t1.popularity, t2.timesig, t3.avg_rating
 FROM spotify_csv AS t1
 JOIN spotify_api AS t2
-ON t1.id = t2.id;
+ON t1.id = t2.id
   JOIN album as t3
 	ON t1.artist=t3.artist;
 
@@ -20,8 +20,10 @@ ON t1.id = t2.id;
 
 CREATE VIEW Q1 AS --Saved as a view 'Q1' in Database
 
-SELECT title, key, timesig tempo, popularity, year 
-FROM ALL_MUSIC
+SELECT t1.title, t1.key, t2.timesig, t1.tempo, t1.popularity, t1.year 
+FROM spotify_csv AS t1
+JOIN spotify_api AS t2
+ON t1.id = t2.id
 WHERE TEMPO >= 100;
 
 
@@ -31,8 +33,8 @@ WHERE TEMPO >= 100;
 
 CREATE VIEW Q2 AS --Saved as a view 'Q2' in Database
 
-SELECT title, artist, genre, popularity, year 
-FROM ALL_MUSIC
+SELECT title, artist, popularity, year 
+FROM spotify_csv
 WHERE YEAR BETWEEN 1970 AND 1989;
 
 

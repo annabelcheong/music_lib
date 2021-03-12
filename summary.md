@@ -3,6 +3,9 @@ SUMMARY
 - Challenges encountered via the ETL process.
 - Findings of the derived results.
 
+
+Music topic selected as it is relatable to a vast audience, regardless of age or ethnicity. Spotify is primary used in the data collection process because is deemed a reliable source (with more than 144 million subscribers around the world who pay for the service) and is a source with extensive music data. 
+
 ******************
 EXTRACTING DATA
 ******************
