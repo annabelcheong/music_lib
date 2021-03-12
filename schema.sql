@@ -34,7 +34,7 @@ artist VARCHAR NOT NULL,
 release_date  VARCHAR, 
 genres  VARCHAR,
 secondarygenres  VARCHAR, 
-avg_rating INT, 
+avg_rating DECIMAL, 
 rating_count INT, 
 review_count INT,
 spotify_link  VARCHAR
