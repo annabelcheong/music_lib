@@ -9,7 +9,7 @@ CREATE TABLE spotify_csv (
   title VARCHAR NOT NULL,
   artist VARCHAR NOT NULL,
   key INT NOT NULL,
-  tempo INT NOT NULL,
+  tempo DEC NOT NULL,
   year INT NOT NULL,
   popularity INT NOT NULL
 );
