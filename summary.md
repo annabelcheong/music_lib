@@ -10,7 +10,7 @@ Music topic selected as it is relatable to a vast audience, regardless of age or
 EXTRACTING DATA
 ******************
 
-**** data.csv ****
+### data.csv 
 This dataset was extracted from the gaggle website:
 https://www.kaggle.com/yamaerenay/spotify-dataset-19212020-160k-tracks?select=data.csv
 
