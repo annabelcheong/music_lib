@@ -31,13 +31,31 @@ One of the major challenges was that it is extremely time consuming to extract 1
 The extraction process was able to only extract out 9477 rows before faulting.
 
 *** albums ***
+Album data was obtained from the following web page (URL):
+https://rateyourmusic.com/charts/top/album/all-time/#results
 
+This website has no working api's, so the top albums of all time were extracted using web scrapping methods.
+Rate your Music dot com allows anyone to create an account, then submit ratings to albums they have listened to. 
 
-*************** Jim to add to ***************
+The URL used, provides a list of albums sorted from the most popular album.  This is based on an average of the rating provided by all users that have rated each album.
 
+Each page lists 40 albums in rating order i.e. the first page lists albums 1 to 40.  A user can then press next to view the next 40 albums.
 
+All up there is 125 pages.  This equates to a list of the top rated 5000 albums of all time.
 
-******************
+Each album listing displays the follwing attributes about that album:
+- Album title, artist, image and release date
+- A general and a secondary list of genres
+- A rating summary of users who have provided a rating.  This includes an average rating, total of all ratings and a total number of reviews
+- A link to Spotify, Youtube, Sound Cloud and Apple Music for each album.
+
+The project requires a link to Spotify music only.  Not every album listed has a link to Spotify.  Therefore, 4531 record were scrapped from the URL.
+
+Extraction code can be found in a Jupyter notebook named album.ipynb
+
+![Alt text](images/rateyourmusic.png?raw=true "Rate Your Music")
+
+****************** 
 TRANSFORMING DATA
 ******************
 
@@ -55,16 +73,18 @@ The transformation is already mostly covered in the Extraction section. Further 
 
 
 *** albums ***
+Fields extracted from the web site were initially stored in Pandas dataframe ready for transformation.  The following fields required transformation:
+- Position - Each position in the chart included a full stop.  The full stop was removed.
+- Release Date - End of line characters were removed.  The column was left as a string because not every entry was uniform to a date format.  For example, 4 January 1970, May 2005, 6 November 1983 Live Event.
+- Genres - remove end of line characters    
+- Secondary Genres - remove end of line characters
+- Rating Count - convert to a number and remove comma
+- Review Count - convert to a number and remove comma
 
-*************** Jim to add to ***************
-
-
+Finally, the position in the chart was set as the index.
 
 *** Overall ***
 All final data frames were converted to a csv file and saved in the resources folder of the repository. This provides an option for the user in allowing them to load the data on postgres database via the transformed data available in csv format.
-
-
-*************** Jim to add to ***************
 
 
 ******************
