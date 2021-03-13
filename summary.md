@@ -110,6 +110,8 @@ Note: Recommendation to load the data via sqlalchemy and connect with the postgr
 ### Overall (Joins)
 In order to successfully join the columns, the column title that was joined on was consistent amongst the 3 tables that were created.
 
+![Join Table Image](images/'query.sql'-join_tables.PNG)
+
 #### Queries  (Refer to queries.sql)
 Views are created in queries.sql, subsequent to joining the tables.
 Each view created is to serve a particular audience type. These were created based on assumed interests:
