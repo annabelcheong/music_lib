@@ -26,7 +26,7 @@ The audio features API website provides a lot of content for each song (Spotify 
 
 A list was created to store only selected information from audio features. This was the Spotify id (unique song) and the time signature for the song. 
 
-One of the major challenges was that it is extremely time consuming to extract 170,000 rows and despite the try and except code in place, it still stopped running due to KeyError: 'id'. 
+One of the major challenges was that it is extremely time consuming to extract 170,000 rows. Furthermore, despite the try and except code in place, the Spotify API still stopped running due to KeyError: 'id'. If more time was provided, the 170,000 rows could be looped in sections.
 
 The extraction process was able to only extract out 9477 rows before faulting.
 
