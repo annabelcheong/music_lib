@@ -103,8 +103,10 @@ There are 2 methods of loading the data, and both the options are provided.
 First method: Directly connect to postgres and upload the final dataframes to the tables.
 Second method: Saved the final dataframe as a csv file.
 
-Note that when the csv files are exported, no index (index=False) was requested in the code. This is to ensure a successful load into the postgres database. 
-eg. new_csv_df.to_csv('resources/new_csv.csv', index=False)
+When the csv files are exported, no index (index=False) was requested in the code. This is to ensure a successful load into the postgres database. 
+eg. id_timesig_df.to_csv('resources/timesig.csv', index=False)
+
+Note: Recommendation to load the data via sqlalchemy and connect with the postgres database. Due to the apostrophes and commas being a part of the actual title and artist entries, importing data via the csv file confuses the database and the load may fail. 
 
 ### Overall (Joins)
 In order to successfully join the columns, the column title that was joined on was consistent amongst the 3 tables that were created.
