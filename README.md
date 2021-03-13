@@ -19,6 +19,10 @@ REPOSITORY
 
 This repository contains:
 
+***** FILE: summary.md *****
+This includes a summary of the challenges and findings of the ETL project.
+
+
 ***** FILE: music.ipynb *****
 This includes the extraction, transformation and loading (including the connection to postgress and loading of data) from the data.csv file (from Kaggle) and from the Spotify API site. 
 
@@ -29,6 +33,7 @@ This includes the extraction, transformation and loading of information from the
 
 ***** FILE: schema.ipynb *****
 This includes the query to create all the tables with details on the column headings.
+
 
 ***** FILE: queries.ipynb *****
 This includes the query to join the tables.
