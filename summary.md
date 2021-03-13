@@ -53,7 +53,7 @@ The project requires a link to Spotify music only.  Not every album listed has a
 
 Extraction code can be found in a Jupyter notebook named album.ipynb
 
-![Alt text](/images/rateyourmusic.png?raw=true "Rate Your Music")
+![Alt text](https://github.com/annabelcheong/music_lib/images/rateyourmusic.png?raw=true "Rate Your Music")
 
 ************************* 
 ## TRANSFORMING DATA
